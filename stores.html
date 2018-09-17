@@ -10,16 +10,29 @@
     <link rel="stylesheet" href="styles.css">
     <title>Uber Eats</title>
 </head>
-<body>
+<body class="body">
     <header class="header" id="header">
-        <div class="header-container-xs header-container-md header-container-ld">
-            <img class="header__logo" src="logos/logo.svg" alt="ubereatslogo">
-            <div class="buttons-container">
-                <button class="buttons-container__button">Sign In</button>
-                <button class="buttons-container__button">Register</button>
-                <a class="buttons-container__link" href="#">
-					<img class="buttons-container__basket" src="logos/basket.svg" alt="basket">
-				</a>
+        <div class="container">
+            <div class="header-container">
+                <img class="header__logo" src="logos/logo.svg" alt="ubereatslogo">
+                <div class="time-adress-form">
+                    <form>
+                        <select class="time-form">
+                            <option value="ASAP">ASAP</option>
+                        </select>
+                    </form>
+                        <span class="time-adress-form__text">to</span>
+                    <form>
+                        <input type="text" class="time-adress-form__adress" placeholder="ul. Bolshaya Dmitrovka,22">
+                    </form>    
+                </div>
+                <div class="buttons-container">
+                    <button class="buttons-container__button">Sign In</button>
+                    <button class="buttons-container__button">Register</button>
+                    <a class="buttons-container__link" href="#">
+                        <img class="buttons-container__basket" src="logos/basket.svg" alt="basket">
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -63,8 +76,8 @@
             <h1 class="restaurants-menu__title">Moscow Restaurants</h1>
         
         <div class="row">
-                <div class="col-xs-12">
-                    <a href="#">
+                <div class="col-xs-12 col-md-6">
+                    <a href="#" class="card_link">
                         <div class="card">
                             <img class="restaurant-img"  src="imgs/photo-5.png" alt="makdak">                            
                             <span class="restaurant-name">Макдональдс &mdash; Газетный </span>
@@ -73,8 +86,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12">
-                    <a href="#">
+                <div class="col-xs-12 col-md-6">
+                    <a href="#" class="card_link">
                         <div class="card">
                             <img class="restaurant-img" src="imgs/photo-1.png" alt="makdak">                           
                             <span class="restaurant-name"span>DimSum & Co &mdash; ЦМД </span>
@@ -83,8 +96,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12">
-                    <a href="#">
+                <div class="col-xs-12 col-md-6">
+                    <a href="#" class="card_link">
                         <div class="card">
                             <img class="restaurant-img" src="imgs/photo.png" alt="makdak">
                             <span class="restaurant-name">ДвижОК &mdash; Манежная </span>
@@ -93,8 +106,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12">
-                    <a href="#">
+                <div class="col-xs-12 col-md-6">
+                    <a href="#" class="card_link">
                         <div class="card">
                             <img class="restaurant-img" src="imgs/photo-2.png" alt="makdak">                            
                             <span class="restaurant-name">НЯ &mdash; NHA </span>
@@ -103,8 +116,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12">
-                    <a href="#">
+                <div class="col-xs-12 col-md-6">
+                    <a href="#" class="card_link">
                         <div class="card">
                             <img class="restaurant-img" src="imgs/photo-3.png" alt="makdak">
                             <span class="restaurant-name">Точка Дзы &mdash; Цветной </span>
@@ -113,8 +126,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12">
-                    <a href="#">
+                <div class="col-xs-12 col-md-6">
+                    <a href="#" class="card_link">
                         <div class="card">
                             <img class="restaurant-img" src="imgs/photo-4.png" alt="makdak">                            
                             <span class="restaurant-name">Cinnabon</span>
@@ -123,8 +136,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12">
-                    <a href="#">
+                <div class="col-xs-12 col-md-6">
+                    <a href="#" class="card_link">
                         <div class="card">
                             <img class="restaurant-img" src="imgs/photo-6.png" alt="makdak">                       
                             <span class="restaurant-name">PIZZELOVE</span>
@@ -133,8 +146,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12">
-                    <a href="#">
+                <div class="col-xs-12 col-md-6">
+                    <a href="#" class="card_link">
                         <div class="card">
                             <img class="restaurant-img" src="imgs/photo-7.png" alt="makdak">                           
                             <span class="restaurant-name">Zю кафе &mdash; Тверская </span>
@@ -143,8 +156,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12">
-                    <a href="#">
+                <div class="col-xs-12 col-md-6">
+                    <a href="#" class="card_link">
                         <div class="card">
                             <img class="restaurant-img" src="imgs/photo-8.png" alt="makdak">                          
                             <span class="restaurant-name">Bar BQ Cafe &mdash; Манежная </span>
@@ -167,7 +180,7 @@
                 </div>
                 <div class="row">
                     
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 col-md-4">
                         <div class="language">                            
                             <form action="#">
                                     <select class="footer__select">
@@ -193,7 +206,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 col-md-4">
                         <ul class="footer-info">
                             <li class="footer-info__item">
                                 <a href="#">About UberEats</a>
@@ -206,7 +219,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 col-md-4">
                         <ul class="footer-info">
                             <li class="footer-info__item">
                                 <a href="//#">See all cities</a>
@@ -227,36 +240,34 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="get_app">
-                            <img src="logos/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="applelogo">
+                            <img class="get_app__apple" src="logos/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="applelogo">
                             <img src="logos/en_badge_web_generic-cf6dad406f.svg" alt="googleapp">
                         </div>    
                     </div>
                 </div>
                 <div class="row">
-                    <div class="footer-info__gap">
-                        <div class="col-xs-12">
-                            <div class="footer-info__lower">
-                                
-                                    <a href="#">© 2017 Uber Technologies Inc.</a>
-                                
-                            </div>       
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="footer-info__lower footer-info__margin">
-                                
-                                    <a href="#">Privacy</a>
-                                
-                            </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="footer-info__lower">
-                                
-                                    <a href="#">Terms</a>
-                                
-                            </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="footer__margin-top">
+                            
+                                <a href="#" class="lowfooter__text-style">© 2017 Uber Technologies Inc.</a>
+                            
+                        </div>       
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="footer-info__gap">
+                            
+                                <a href="#" class="lowfooter__text-style">Privacy</a>
+                            
                         </div>
                     </div>
-                </div>    
+                    <div class="col-xs-12 col-md-4">
+                        <div class="footer__margin-bottom">
+                            
+                                <a href="#" class="lowfooter__text-style">Terms</a>
+                            
+                        </div>
+                    </div>
+                    </div>
             </div>
             <a href="#header">
                 <div class="greenbutton">
