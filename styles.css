@@ -14,6 +14,13 @@ html {
     font-family: "Roboto", sans-serif;
     text-decoration: none;
 }
+
+@media only screen and (min-width: 992px) {
+    .body {
+        background-color: #FFFFFF;
+    }
+}
+
 /*
 @media only screen and (min-width: 768px) {
     .body {
@@ -66,9 +73,26 @@ html {
     padding-right: 12px;
 }
 
+@media only screen and (min-width: 992px) {
+    .time-form {
+        width: 65px;
+        font-size: 16px;
+    }
+}
+
 .time-adress-form__text {
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+@media only screen and (min-width: 992px) {
+    .time-adress-form__text {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 300;
+    }
 }
 
 .time-adress-form__adress {
@@ -81,6 +105,13 @@ html {
     line-height: 24px;
     background: url("logos/Group.svg") no-repeat 12px 12px;
     padding-left: 35px;
+}
+
+@media only screen and (min-width: 992px) {
+    .time-adress-form__adress {
+        font-size: 16px;
+        width: 292px;
+    }
 }
 
 .buttons-container {
@@ -245,7 +276,13 @@ html {
     margin-top: 48px;
     background-color: #262626;
     position: relative;
-  }
+}
+
+@media only screen and (min-width: 992px) {
+    .footer {
+        margin-top: 80px;
+    }
+}
 
 .white__logo {
     display: flex;
